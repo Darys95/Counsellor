@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:overScrollMode="never"
+    android:padding="@dimen/_24sdp"
+    android:scrollbars="vertical"
+    android:scrollbarFadeDuration="0"
+    android:scrollbarStyle="outsideOverlay"
+    android:background="@drawable/beckie"
+    android:scrollbarSize="@dimen/_3sdp"
+    android:scrollbarThumbVertical="@android:color/holo_green_dark"
+    tools:context=".activities.CounsellorProblemsActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:fontFamily="@font/baloo_chettan"
+            android:text="@string/what_problems_do_you_specialise_in"
+            android:textAlignment="center"
+            android:textColor="#1600FE"
+            android:textSize="@dimen/_17ssp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/baloo_chettan"
+            android:text="Select all applicable"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_orange_light"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="normal" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardAddiction"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            android:checkable="true"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="@dimen/_7sdp"
+            app:cardElevation="@dimen/_5sdp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:text="@string/addiction"
+                android:textAlignment="center"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/_16sdp"
+                app:fontFamily="@font/aladin" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardAnger"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:cardElevation="@dimen/_5sdp"
+            app:cardCornerRadius="@dimen/_7sdp"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="@color/white"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            android:checkable="true"
+            android:clickable="true"
+            android:focusable="true">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:text="@string/anger_management"
+                android:textAlignment="center"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/_16sdp"
+                app:fontFamily="@font/aladin" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardAnxiety"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:cardElevation="@dimen/_5sdp"
+            app:cardCornerRadius="@dimen/_7sdp"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="@color/white"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            android:checkable="true"
+            android:clickable="true"
+            android:focusable="true">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:text="@string/anxiety"
+                android:textAlignment="center"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/_16sdp"
+                app:fontFamily="@font/aladin" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardCareer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:cardElevation="@dimen/_5sdp"
+            app:cardCornerRadius="@dimen/_7sdp"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="@color/white"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            android:checkable="true"
+            android:clickable="true"
+            android:focusable="true">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:text="@string/career_difficulties"
+                android:textAlignment="center"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/_16sdp"
+                app:fontFamily="@font/aladin" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardDepression"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:cardElevation="@dimen/_5sdp"
+            app:cardCornerRadius="@dimen/_7sdp"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="@color/white"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            android:checkable="true"
+            android:clickable="true"
+            android:focusable="true">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:text="@string/depression"
+                android:textAlignment="center"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/_16sdp"
+                app:fontFamily="@font/aladin" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardEating"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:cardElevation="@dimen/_5sdp"
+            app:cardCornerRadius="@dimen/_7sdp"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="@color/white"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            android:checkable="true"
+            android:clickable="true"
+            android:focusable="true">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:text="@string/eating_disorders"
+                android:textAlignment="center"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/_16sdp"
+                app:fontFamily="@font/aladin" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardFamily"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:cardElevation="@dimen/_5sdp"
+            app:cardCornerRadius="@dimen/_7sdp"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="@color/white"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            android:checkable="true"
+            android:clickable="true"
+            android:focusable="true">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:text="@string/family_conflict"
+                android:textAlignment="center"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/_16sdp"
+                app:fontFamily="@font/aladin" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardGrief"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:cardElevation="@dimen/_5sdp"
+            app:cardCornerRadius="@dimen/_7sdp"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="@color/white"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            android:checkable="true"
+            android:clickable="true"
+            android:focusable="true">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:text="@string/grief_and_loss"
+                android:textAlignment="center"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/_16sdp"
+                app:fontFamily="@font/aladin" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardLGBTQ"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:cardElevation="@dimen/_5sdp"
+            app:cardCornerRadius="@dimen/_7sdp"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="@color/white"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            android:checkable="true"
+            android:clickable="true"
+            android:focusable="true">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:text="@string/lgbtq_related_issues"
+                android:textAlignment="center"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/_16sdp"
+                app:fontFamily="@font/aladin" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardMental"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:cardElevation="@dimen/_5sdp"
+            app:cardCornerRadius="@dimen/_7sdp"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="@color/white"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            android:checkable="true"
+            android:clickable="true"
+            android:focusable="true">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:text="@string/mental_illness"
+                android:textAlignment="center"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/_16sdp"
+                app:fontFamily="@font/aladin" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardParenting"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:cardElevation="@dimen/_5sdp"
+            app:cardCornerRadius="@dimen/_7sdp"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="@color/white"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            android:checkable="true"
+            android:clickable="true"
+            android:focusable="true">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:text="@string/parenting_issues"
+                android:textAlignment="center"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/_16sdp"
+                app:fontFamily="@font/aladin" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardRelationship"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:cardElevation="@dimen/_5sdp"
+            app:cardCornerRadius="@dimen/_7sdp"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="@color/white"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            android:checkable="true"
+            android:clickable="true"
+            android:focusable="true">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:text="@string/relationship_issues"
+                android:textAlignment="center"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/_16sdp"
+                app:fontFamily="@font/aladin" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardSelf"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:cardElevation="@dimen/_5sdp"
+            app:cardCornerRadius="@dimen/_7sdp"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="@color/white"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            android:checkable="true"
+            android:clickable="true"
+            android:focusable="true">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:text="@string/self_esteem_issues"
+                android:textAlignment="center"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/_16sdp"
+                app:fontFamily="@font/aladin" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardSleep"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:cardElevation="@dimen/_5sdp"
+            app:cardCornerRadius="@dimen/_7sdp"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="@color/white"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            android:checkable="true"
+            android:clickable="true"
+            android:focusable="true">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:text="@string/sleeping_disorders"
+                android:textAlignment="center"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/_16sdp"
+                app:fontFamily="@font/aladin" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardStress"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:cardElevation="@dimen/_5sdp"
+            app:cardCornerRadius="@dimen/_7sdp"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="@color/white"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            android:checkable="true"
+            android:clickable="true"
+            android:focusable="true">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:text="@string/stress"
+                android:textAlignment="center"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/_16sdp"
+                app:fontFamily="@font/aladin" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardTrauma"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:cardElevation="@dimen/_5sdp"
+            app:cardCornerRadius="@dimen/_7sdp"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="@color/white"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            android:checkable="true"
+            android:clickable="true"
+            android:focusable="true">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:text="@string/trauma_and_abuse"
+                android:textAlignment="center"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/_16sdp"
+                app:fontFamily="@font/aladin" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRegProblems"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:fontFamily="@font/baloo_chettan"
+            android:onClick="FinishRegCoun"
+            android:text="@string/next"
+            android:textColor="@android:color/holo_orange_light"
+            android:textSize="@dimen/_13ssp"
+            android:textStyle="bold"
+            app:backgroundTint="#1600FE"
+            app:cornerRadius="@dimen/_8ssp" />
+    </LinearLayout>
+</ScrollView>
